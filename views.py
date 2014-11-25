@@ -20,7 +20,7 @@ def aboutMe():
 
 @app.route('/AboutUs')
 def aboutUs():
-    bgStyle='other'
+    bgStyle='css/other.css'
     return render_template('AboutUs.html',
                            title='About Us',
                            bgStyle=bgStyle)
