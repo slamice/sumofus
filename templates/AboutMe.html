@@ -1,0 +1,22 @@
+<!-- extend base layout -->
+{% extends "base.html" %}
+
+{% block content %}
+
+<p>
+<b>Gnarly webdev here!</b> I love people and technology, and I can see SumOfUs {ahem} summing that up.
+</p>
+<p>
+Some of the main programming languages I've worked with:
+
+  <ul>
+    <li>Python (Adding features to our API, building custom scripts and features). Lately have been working in <a href="http://flask.pocoo.org/"> Flask</a> and <a href="http://www.pylonsproject.org/">Pyramid.</a></li>
+    <li>PHP: worked on wordpress sites for clients and also created features and fixed bugs in my current company using the  <a href="http://www.codeigniter.com/">CodeIgniter framework.</a></li>
+    <li>Javascript Worked on lots of frontend from raw JS to JQuery and a bit of BackboneJs</li>
+    <li>Java (Worked in custom framework building CRUD, graphing and analysis software at Make Technologies)</li>
+    </li>You can see more specific details in my <a href="{{ url_for('static', filename='other/resume.pdf') }}">resume</a> to get a better idea about the projects I worked on in the past few years.</li>
+  </ul>
+</p>
+<p> This site is a quick webapp I put together in <a href="http://flask.pocoo.org/">Flask</a> in a day. <a href="https://github.com/slamice/sumofus">Code is here.</a></p>
+
+{% endblock %}
