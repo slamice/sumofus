@@ -1,4 +1,3 @@
-Django==1.7.1
 Flask==0.10.1
 Jinja2==2.7.3
 MarkupSafe==0.23
@@ -9,9 +8,4 @@ bdist-mpkg==0.5.0
 dj-static==0.0.6
 gunicorn==19.1.1
 itsdangerous==0.24
-macholib==1.5.1
-numpy==1.8.0rc1
-py2app==0.7.3
-pyOpenSSL==0.13.1
-pyobjc-core==2.5.1
 static3==0.5.1
