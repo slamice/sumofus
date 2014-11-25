@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Issam Zeibak and Sum Of Us</title>
+
+        <meta charset="UTF-8"/>
+        <meta name="robots" content="index, follow"/>
+        <meta name="description" content="Issam Zeibak is an awesome developer, who knew!"/>
+        <meta name="author" content="Issam Zeibak"/>
+
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="MobileOptimized" content="320"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,900" type="text/css" media="screen"/>
+        <link rel="stylesheet" href="{{ url_for('static', filename=bgStyle) }}" type="text/css" media="screen"/>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}" type="text/css" media="screen"/>
+
+    </head>
+
+    <body class="about">
+        <div id="wrap">
+            <div id="nav">
+              <h1>Issam Zeibak
+                <a href="http://github.com/slamice"><img alt="Github" src="{{ url_for('static', filename='img/github.png') }}"></a>
+                <a href="http://linkedin.com/in/issamzeibak"><img alt="Linkedin" src="{{ url_for('static', filename='img/linkedin.png') }}"></a>
+                <a href="http://twitter.com/susnote"><img alt="Twitter" src="{{ url_for('static', filename='img/twitter.png') }}"></a>
+              </h1>
+              <br/>
+              <h2>
+                  <ul>
+                    <li class="lnav">                   
+                        <a {% if request.path == "/" %} class="active" {% endif %} href="/">About You</a>
+                    </li>|                                                      
+                    <li class="lnav">                  
+                        <a {% if request.path=="/AboutMe" %} class="active" {% endif %} href="/AboutMe">About Me</a>
+                    </li>|
+                    <li class="lnav">                  
+                        <a {% if request.path=="/AboutUs" %} class="active" {% endif %} href="/AboutUs">About Us</a>
+                    </li>
+                  </ul> 
+              </h2>
+              <br/>
+
+            </div>
+            <div id="main">
+              {% block content %}{% endblock %}
+            </div>
+        </div>
+    </body>
+
+
+
+</html>
